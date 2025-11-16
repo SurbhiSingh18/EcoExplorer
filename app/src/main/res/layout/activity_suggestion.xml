@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ✅ Navigation Bar -->
+        <LinearLayout
+            android:id="@+id/navBarSuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:background="#2E7D32"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/btnBackHomeSuggestion"
+                android:layout_width="49dp"
+                android:layout_height="36dp"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Eco Suggestions 🌱"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 🌿 Existing UI -->
+        <LinearLayout
+            android:id="@+id/suggestionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:paddingTop="24dp"
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Your Eco-Friendly Suggestions 🌱"
+                android:textColor="#2E7D32"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A5D6A7"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:id="@+id/destinationList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:dividerPadding="12dp" />
+
+            <Button
+                android:id="@+id/btnBuildPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build My Eco Plan"
+                android:textAllCaps="false"
+                android:backgroundTint="#388E3C"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="3dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

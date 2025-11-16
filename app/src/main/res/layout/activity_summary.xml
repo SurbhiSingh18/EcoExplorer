@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="20dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ✅ Navigation Bar -->
+        <LinearLayout
+            android:id="@+id/navBarSummary"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#2E7D32"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/btnBackHomeSummary"
+                android:layout_width="45dp"
+                android:layout_height="37dp"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Eco Plan Summary 🌿"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 🌿 Existing content below -->
+        <ImageView
+            android:id="@+id/imgDestination"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eco Destination"
+            android:textColor="#1B5E20"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvPlanSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2E7D32"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_card">
+
+            <Button
+                android:id="@+id/btnMoreEcoTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More Eco Travel Tips"
+                android:textColor="@android:color/white"
+                android:background="#1C7A24"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌿 Eco Travel Tips"
+                android:textColor="#1B5E20"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvEcoTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2E7D32"
+                android:textSize="15sp"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
